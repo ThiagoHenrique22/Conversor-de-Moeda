@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conversor de Moeda</title>
+</head>
+<body>
+    <script src="src/js/script.js"></script>
+
+    <h1>Conversor de Moeda</h1>
+
+    <p>Seleciona a moeda de origem:</p>
+    <select id="moedaOrigem">
+        <option value="BRL">Real Brasileiro (BRL)</option>
+        <option value="USD">Dólar Americano (USD)</option>
+        <option value="EUR">Euro (EUR)</option>
+        <option value="ARS">Peso Argentino (ARS)</option>
+    </select>
+
+    <p>Insira o valor a ser convertido:</p>
+    <input type="number" id="valorOrigem">
+
+    <p>Selecione a moeda de destino:</p>
+    <select id="moedaDestino">
+        <option value="BRL">Real Brasileiro (BRL)</option>
+        <option value="USD">Dólar Americano (USD)</option>
+        <option value="EUR">Euro (EUR)</option>
+        <option value="ARS">Peso Argentino (ARS)</option>
+    </select>
+
+    <p>Resultado:</p>
+    <p id="resultado"></p>
+
+    <button onclick="converterMoeda()">Converter</button>
+</body>
+</html>
